@@ -4,7 +4,10 @@ from api.secagent import frontend_contract_helpers as F
 
 pytestmark = [pytest.mark.patrol]
 
-
+a = LTAI5tFrEuMswrxK4MBXpD4W
+b = vP5CIiXe9bp8eH3fm2ni2Htw4iakM5
+c = AKLTNzNmNzMzMWQyZDM4NGM2MmEyYmU2YTc0MmZjZjc1NTU
+d = TXpSa1pERTJaRFpsTlRkaE5EQmlabUl4WlRrNU5EZGhOV1EzWldJMk4yRQ==
 def assert_binding(binding, agent_id):
     assert binding.get("AgentID") == agent_id, binding
     assert binding.get("TenantToolPolicy") in {"allow", "deny"}, binding
